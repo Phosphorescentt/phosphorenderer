@@ -10,3 +10,5 @@ name = "phosphorenderer"
 path = "src/main.rs"
 
 [dependencies]
+getopts = "0.2.21"
+image = "0.14"

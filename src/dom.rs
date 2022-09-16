@@ -2,20 +2,20 @@ use std::collections::HashMap;
 
 pub struct Node {
     // data common to all nodes:
-    children: Vec<Node>,
+    pub children: Vec<Node>,
 
     // data specific to each node type:
-    node_type: NodeType,
+    pub node_type: NodeType,
 }
 
-enum NodeType {
+pub enum NodeType {
     Text(String),
     Element(ElementData),
 }
 
-struct ElementData {
-    tag_name: String,
-    attributes: AttrMap,
+pub struct ElementData {
+    pub tag_name: String,
+    pub attributes: AttrMap,
 }
 
 pub type AttrMap = HashMap<String, String>;
